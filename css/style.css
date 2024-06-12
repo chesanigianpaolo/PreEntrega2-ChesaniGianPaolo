@@ -645,6 +645,7 @@ mobile M -> 375px   **/
         flex-direction: column;
         align-items: center;
     }
+    /* jdvfdsvfos */
     .recomendados-grid{
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: 25% 8% 25% 8% 25% 8%;
