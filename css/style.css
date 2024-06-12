@@ -1,0 +1,667 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** HEADER Y FOOTER GENERAL + MAIN INDEX **/
+/*HEADER*/
+header {
+    width: 100wv;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    grid-template-rows: 80% 20%;
+}
+
+header div nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px;
+}
+header div nav ul li a{
+    text-decoration: none;
+    font-size: 23px;
+}
+.login a{
+    text-decoration: none;
+}
+
+.item1-logoserene {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: center;
+}
+.item2-nav{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin-left: 30px;
+    align-self: self-end;
+}
+.item3-login{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    justify-self: end;
+    margin-top: 10px;
+    margin-right: 10%;
+}
+.item4-search{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    justify-self: end;
+    margin-right: 10%;
+}
+
+
+/**MAIN**/
+main{
+    background-color: white;
+}
+h2{
+    font-family:Rubik;
+    color: rgb(123, 29, 29);
+}
+h3{
+    font-family: Rubik;
+}
+h4{
+    font-family:Roboto;
+    color: rgb(8, 8, 100);
+}
+h6{
+    font-family: Roboto;
+}
+
+/*Sección Banner*/
+.grid-banner{
+    display: grid;
+    width: 100%;
+    height: 700px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: repeat(4,25%);
+    text-align: center;
+}
+.grid-banner img{
+    width: 100%;
+    height: 700px;
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+.grid-banner p{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-transform: uppercase;
+    color: white;
+    font-size: 47px;
+}
+.grid-banner a{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    font-size: 20px;
+}
+
+/*Dimensiones generales de todos los carteles y productos del index*/
+.productPic img{
+    width: 200px;
+    height: 200px;
+}
+.productPic h4{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.productPic p{
+    font-size: 20px;
+}
+.productPic p2{
+    font-size: 30px;
+}
+.productPic a{
+    font-size: 23px;
+}
+.cartelPic{
+    width: 400px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 85% 15%;
+}
+.cartelPic img{
+    width: 100%;
+    height: 100%;
+    grid-column: 1/4;
+    grid-row: 1/3;
+}
+.cartelPic h2{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+
+/*SECCION -- PRODUCTOS (Carteras Billeteras Accesorios) */
+.productPic{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flex-productos{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/*SECCION -- ENVIOS NEWSLETTER ETC */
+.bloque-central-grids{
+    display: grid;
+    width: 100vw;
+    height: auto;
+    grid-template-columns: 74% 24%;
+    grid-template-rows: (2, 1fr);
+    grid-template-areas: 
+    "item1 item3"
+    "item2 item3";
+    gap: 10px;
+    margin: 10px;
+}
+
+.bloque-envios{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+}
+.envios{
+    width: 250px;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(209, 209, 209);
+
+}
+.envios img{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    color: white;
+}
+.envios p{
+    color: black;
+    margin: 10px;
+}
+
+.bloque-nuevos-ingresos{
+    display: grid;
+    grid-template-columns: (3, 1fr);
+    grid-template-rows: (3, 1fr);
+    width: 100%;
+    height: 100%;
+    grid-area: item2;
+}
+.bloque-nuevos-ingresos img{
+    width: 100%;
+    height: 100%;
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+.bloque-nuevos-ingresos h2{
+    width: 100%;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+
+.bloque-newsletter{
+    grid-area: item3;
+    width: 100%;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: rgb(209, 209, 209);
+}
+.bloque-newsletter p{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.button{
+    padding: 5px 10px;
+    border: 2px solid black; 
+    background-color: grey;
+}
+
+
+
+/*SECCION -- PRODUCTOS RECOMENDADOS*/
+.recomendados{
+    width: 100%;
+    height: 100%;
+    background-color: beige;
+    margin: 10px;
+}
+
+.recomendados h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.recomendados p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.recomendados-grid{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 90% 10%;
+    grid-template-areas:
+    "item1 item3 item5 item7 item9 item11"
+    "item2 item4 item6 item8 item10 item12";
+}
+.recomendados-grid img{
+    width: 170px ;
+    height: 170px ;
+}
+.r1{
+    grid-area: item1;
+    justify-self: center;
+}
+.r2{
+    grid-area: item2;
+    justify-self: center;
+}
+.r3{
+    grid-area: item3;
+    justify-self: center;
+}
+.r4{
+    grid-area: item4;
+    justify-self: center;
+}
+.r5{
+    grid-area: item5;
+    justify-self: center;
+}
+.r6{
+    grid-area: item6;
+    justify-self: center;
+}
+.r7{
+    grid-area: item7;
+    justify-self: center;
+}
+.r8{
+    grid-area: item8;
+    justify-self: center;
+}
+.r9{
+    grid-area: item9;
+    justify-self: center;
+}
+.r10{
+    grid-area: item10;
+    justify-self: center;
+}
+.r11{
+    grid-area: item11;
+    justify-self: center;
+}
+.r12{
+    grid-area: item12;
+    justify-self: center;
+}
+
+
+/** FOOTER **/
+footer{
+    background-color: rgb(156, 156, 156);
+}
+.footer-flex{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.item1-ubi-mail{
+    margin-left: 40px;
+}
+.item2-sobre-pregfr{
+    display: flex;
+    height: 140px;
+    flex-direction: column;
+    justify-content: space-around
+}
+.item3-redes-sociales{
+    margin-right: 40px;
+}
+.barra{
+    border-right: 1px solid black;
+}
+.term-polit{
+    text-align: center;
+}
+.sobre-preg{
+    text-align: center;
+}
+
+
+
+/**Fondo blanco todas paginas secundarias**/
+.fondo{
+    height: auto;
+    background-color: white;
+    margin: 10px;
+}
+
+
+
+/** PAGINA bags y accesorios**/
+.grid-carteras-accesorios{
+    display: grid;
+    grid-template-columns: repeat(4,1fr) ;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "item1 item2 item3 item4"
+    "item5 item6 item7 item8"
+    "item9 item10 item11 item12";
+}
+.grid-carteras-accesorios div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 100px;
+}
+.grid-carteras-accesorios img{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+}
+.grid-carteras-accesorios h4{
+    font-size: 27px;
+}
+.grid-carteras-accesorios p{
+    font-size: 20px;
+}
+.grid-carteras-accesorios p2{
+    font-size: 30px
+}
+.grid-carteras-accesorios button{
+    width: 60px;
+    height: 30px;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+
+
+
+
+/** PAGINA carrito**/
+.h4-titulo{
+    font-size: 30px;
+}
+.grid-carrito{
+    width: 850px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 66% 1fr;
+    grid-template-rows: repeat(4,1fr);
+    margin-left: 300px ;
+    margin-top: 40px;
+}
+.resumen1{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    background-color: beige;
+}
+.resumen2{
+    grid-column: 1/2;
+    grid-row: 3/5;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    background-color: beige;
+}
+.resumen3{
+    grid-column: 2/3;
+    grid-row: 2/5;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+    gap: 20px;
+}
+.resumen3 h4{
+    font-size: 20px;
+}
+
+.resumen1-img img{
+    width: 280px;
+    height: 280px;
+    margin-left: 10px;
+    margin-right: 40px;
+}
+.resumen2-img img{
+    width: 280px;
+    height: 280px;
+    margin-left: 10px;
+    margin-right: 40px;
+}
+.resumen1-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.resumen2-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/** PAGINA preguntas frecuentes **/
+.fondo h4{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.preguntas{
+    width: 80%;
+    height: 240px;
+    padding: 15px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+}
+.preguntas img{
+    width: 70px;
+    height: 70px;
+}
+.grid-preg-frec{
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    grid-template-rows: repeat(2, 50%);
+    grid-template-areas: 
+    "item1 item2 item3 item4"
+    "item5 item6 item7 item8";
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.grid-preg-frec .item1{
+    grid-area: item1;
+}
+.grid-preg-frec .item2{
+    grid-area: item2;
+}
+.grid-preg-frec .item3{
+    grid-area: item3;
+}
+.grid-preg-frec .item4{
+    grid-area: item4;
+}
+.grid-preg-frec .item5{
+    grid-area: item5;
+}
+.grid-preg-frec .item6{
+    grid-area: item6;
+}
+.grid-preg-frec .item7{
+    grid-area: item7;
+}
+.grid-preg-frec .item8{
+    grid-area: item8;
+}
+
+.flex-preg-frec{
+    display: flex;
+    flex-direction: column;
+}
+.flex-preg-frec li{
+    height: 35px;
+    margin: 5px;
+    background-color: beige;
+    border: 1px solid rgb(74, 51, 51);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+/**SECCION RESPONSIVA**/
+/** MEDIA QUERIES - RESPONSIVE **/
+/**medidas de trabajo:
+Laptop   -> 1024px
+tablet   -> 768px
+mobile L -> 425px
+mobile M -> 375px   **/
+
+/**Aplicaré al header y footer de los 5 htmls y a las páginas Index y ...**/
+@media(max-width:1024px){
+    .envios{
+        width: auto;
+    }
+    .recomendados-grid{
+        height: auto;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 44% 6% 44% 6%;
+        grid-template-areas:
+        "item1 item3 item5"
+        "item2 item4 item6"
+        "item7 item9 item11"
+        "item8 item10 item12";
+    }
+    .recomendados-grid a{
+        margin-bottom: 5%;
+    }
+    .recomendados-grid img{
+        width: 220px;
+        height: 220px;
+    }
+}
+
+
+@media (max-width:768px){
+    header .login a {
+        display: none;
+    }
+    header{
+        grid-template-rows: 65% 17.5% 17.5%;
+    }
+    .item4-search{
+        grid-row: 3/4;
+        align-self: flex-end;
+    }
+    .item2-nav{
+        grid-column: 1/4;
+        justify-self: center;
+    }
+    .item2-nav ul li{
+        margin: 6px;
+    }
+
+    .bloque-central-grids{
+        grid-template-columns: 20% 50% 30%;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "item1 item2 item3";
+    }
+    .bloque-envios{
+        flex-direction: column;
+    }
+    .recomendados-grid img{
+        width: 130px;
+        height: 130px;
+    }
+    .footer-flex{
+    height: 370px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+}
+}
+@media(max-width:425px){
+    .item2-nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .recomendados-grid{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 25% 8% 25% 8% 25% 8%;
+        grid-template-areas:
+        "item1 item3"
+        "item2 item4"
+        "item5 item7"
+        "item6 item8"
+        "item9 item11"
+        "item10 item12";
+        }
+        .recomendados-grid img{
+            margin-bottom: 15px;
+        }
+    }
+    @media(max-width:425px){
+        .carrito-search{
+            width: 80px;
+        }
+    }
