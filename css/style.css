@@ -55,6 +55,10 @@ header div nav ul li a:hover{
     margin-top: 10px;
     margin-right: 10%;
 }
+.item3-login:hover{
+    text-decoration: underline;
+    font-size: 18px;
+}
 .item4-search{
     grid-column: 3/4;
     grid-row: 2/3;
@@ -65,6 +69,8 @@ header div nav ul li a:hover{
 
 /**MAIN**/
 main{
+    width: 100%;
+    height: 100%;
     background-color: white;
 }
 h2{
@@ -134,8 +140,8 @@ h6{
 }
 
 .cartelPic{
-    width: 100;
-    height: 450px;
+    width: 25%;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 85% 15%;
@@ -151,8 +157,6 @@ h6{
     grid-row: 2/3;
 }
 
-
-/*SECCION -- PRODUCTOS (Carteras Billeteras Accesorios) */
 .flex-productos{
     display: flex;
     width: 100%;
@@ -178,15 +182,15 @@ h6{
 /*SECCION -- ENVIOS NEWSLETTER ETC */
 .bloque-central-grids{
     display: grid;
-    width: 100vw;
-    height: auto;
+    width: 100%;
+    height: 400px;
     grid-template-columns: 74% 24%;
     grid-template-rows: 40% 60%;
     grid-template-areas: 
     "item1 item3"
     "item2 item3";
     gap: 10px;
-    margin: 10px;
+    margin-bottom: 30px;
 }
 
 .bloque-envios{
@@ -268,9 +272,25 @@ h6{
 .button{
     padding: 5px 10px;
     border: 2px solid black; 
-    background-color: grey;
+    background-color: black;
+    color: white;
 }
-
+.button input{
+    background-color: black;
+    color: white ;
+}
+.button:active{
+    background-color: green;
+}
+.button input:active{
+    background-color: black;
+    color: white ;
+    font-size: larger;
+}
+.bloque-newsletter input::placeholder{
+    background-color: gray;
+    color: white;
+}
 
 
 /*SECCION -- PRODUCTOS RECOMENDADOS*/
@@ -738,6 +758,7 @@ mobile M -> 375px   **/
     .bloque-central-grids{
         width: 100%;
         height: auto;
+        justify-content: center;
         grid-template-columns: 20% 45% 30%;
         grid-template-rows: 1fr;
         grid-template-areas:
@@ -757,7 +778,7 @@ mobile M -> 375px   **/
         font-size: 17px;
     }
     .bloque-newsletter p{
-        font-size: 12px;
+        font-size: 10px;
     }
     .bloque-newsletter form input{
         width: 110px;
@@ -769,10 +790,27 @@ mobile M -> 375px   **/
     }
 
     .footer-flex{
-        height: 370px;
+        height: 250px;
         flex-direction: column;
-        justify-content: center;
         gap: 30px;
+        justify-content: center;
+    }
+    .item1-ubi-mail{
+        order: 2;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+    .item2{
+        order: 3;
+    }
+    .item3-redes-sociales{
+        order: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-left: 40px;
     }
 
         /* PAGINA Carrito */
@@ -798,6 +836,7 @@ mobile M -> 375px   **/
         grid-template-columns: 60% 40%;
     }
 }
+
 @media(max-width:425px){
     .item2-nav ul{
         display: flex;
@@ -827,6 +866,24 @@ mobile M -> 375px   **/
         height: auto;
     }
 
+    .bloque-central-grids{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bloque-envios{
+        flex-direction: row;
+        height: 100px;
+    }
+    .bloque-nuevos-ingresos{
+        height: auto;
+    }
+    .bloque-newsletter{
+        height: auto;
+        width: 80%;
+        padding: 10px;
+    }
     .bloque-newsletter h3{
         font-size: 15px;
     }
@@ -834,7 +891,7 @@ mobile M -> 375px   **/
         font-size: 10px;
     }
     .bloque-newsletter form input{
-        width: 80px;
+        width: 150px;
     }
 
     .recomendados-grid{
@@ -850,6 +907,18 @@ mobile M -> 375px   **/
         }
         .recomendados-grid img{
             margin-bottom: 15px;
+        }
+
+        .footer-flex{
+            height: 300px;
+        }
+        .item1-ubi-mail{
+            display: flex;
+            flex-direction: column;
+        }
+        .item1-ubi-mail img{
+            width: 25px;
+            height: 25px;
         }
 
         /* PAGINA Carrito */
