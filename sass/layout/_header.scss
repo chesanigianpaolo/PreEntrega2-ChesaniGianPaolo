@@ -1,0 +1,30 @@
+header {
+    width: 100wv;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    grid-template-rows: 80% 20%;
+    div{
+        nav{
+            ul{
+                list-style: none;
+                li{
+                    display: inline-block;
+                    margin: 10px;
+                    a{
+                        text-decoration: none;
+                        font-size: 23px;
+                        &:hover{
+                            color: rgb(71, 70, 70);
+                            text-decoration: underline;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

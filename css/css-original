@@ -1,33 +1,6 @@
 
 /** HEADER Y FOOTER GENERAL + MAIN INDEX **/
 /*HEADER*/
-header {
-    width: 100wv;
-    height: auto;
-    background-color: rgb(255, 255, 255);
-    position: sticky;
-    top: 0;
-    display: grid;
-    grid-template-columns: 35% 30% 35%;
-    grid-template-rows: 80% 20%;
-}
-
-header div nav ul{
-    list-style: none;
-}
-nav ul li{
-    display: inline-block;
-    margin: 10px;
-}
-header div nav ul li a{
-    text-decoration: none;
-    font-size: 23px;
-}
-header div nav ul li a:hover{
-    color: rgb(71, 70, 70);
-    text-decoration: underline;
-    font-weight: bold;
-}
 .login a{
     text-decoration: none;
 }

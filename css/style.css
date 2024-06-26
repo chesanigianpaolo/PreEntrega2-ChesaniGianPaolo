@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  width: 100wv;
+  height: auto;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  display: grid;
+  grid-template-columns: 35% 30% 35%;
+  grid-template-rows: 80% 20%; }
+  header div nav ul {
+    list-style: none; }
+    header div nav ul li {
+      display: inline-block;
+      margin: 10px; }
+      header div nav ul li a {
+        text-decoration: none;
+        font-size: 23px; }
+        header div nav ul li a:hover {
+          color: #474646;
+          text-decoration: underline;
+          font-weight: bold; }
