@@ -1,0 +1,19 @@
+/*tip.. crear mi propio repo de mixin flex grid padding box modeling*/
+
+@mixin flex-generico{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@mixin flex-flow($direcion,$wrap,$justify,$aling,$gap){
+    display:flex;
+    flex-direction: $direcion;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $aling;
+    gap: $gap;
+}

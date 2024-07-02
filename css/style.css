@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*tip.. crear mi propio repo de mixin flex grid padding box modeling*/
 * {
   margin: 0;
   padding: 0;
@@ -64,21 +65,26 @@ footer {
   background-color: #9c9c9c; }
 
 .footer-flex {
-  display: flex;
   width: 100%;
   height: 150px;
+  display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  gap: none; }
 
 .item1-ubi-mail {
   margin-left: 40px; }
 
 .item2-sobre-pregfr {
-  display: flex;
   height: 140px;
+  display: flex;
   flex-direction: column;
-  justify-content: space-around; }
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: none;
+  gap: 20px; }
 
 .item3-redes-sociales {
   margin-right: 40px; }
@@ -90,7 +96,7 @@ footer {
 .sobre-preg {
   text-align: center; }
 
-/**MAIN**/
+/*MAIN-index*/
 main {
   width: 100%;
   height: 100%;
@@ -370,15 +376,19 @@ h6 {
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas: "item1 item2 item3 item4" "item5 item6 item7 item8" "item9 item10 item11 item12"; }
   .grid-carteras-accesorios div {
+    background-color: rgba(241, 241, 241, 0.911);
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: none;
     align-items: center;
+    gap: none;
     margin: 10px;
     margin-bottom: 100px; }
   .grid-carteras-accesorios img {
     width: 300px;
     height: 300px;
-    margin-bottom: 30px; }
+    margin: 20px; }
   .grid-carteras-accesorios h4 {
     font-size: 27px; }
   .grid-carteras-accesorios p {
@@ -389,8 +399,10 @@ h6 {
     width: 60px;
     height: 30px;
     font-size: 18px;
-    margin-left: 20px; }
+    margin-left: 20px;
+    margin-bottom: 15px; }
 
+/*PAGINA carrito*/
 .h4-titulo {
   font-size: 30px; }
 
@@ -399,7 +411,10 @@ h6 {
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  flex-wrap: wrap;
+  justify-content: none;
+  align-items: center;
+  gap: none; }
 
 .grid-carrito {
   width: 90%;
@@ -415,9 +430,10 @@ h6 {
   height: 95%;
   grid-column: 1/2;
   grid-row: 1/3;
+  background-color: beige;
   display: flex;
   flex-direction: row;
-  background-color: beige;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 15px; }
@@ -427,9 +443,10 @@ h6 {
   height: 95%;
   grid-column: 1/2;
   grid-row: 3/5;
+  background-color: beige;
   display: flex;
   flex-direction: row;
-  background-color: beige;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 15px; }
@@ -440,11 +457,12 @@ h6 {
   grid-column: 2/3;
   grid-row: 2/5;
   margin: 5px;
+  background-color: beige;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  background-color: beige;
+  align-items: center;
   gap: 20px; }
   .resumen3 h4 {
     font-size: 20px; }
@@ -461,6 +479,7 @@ h6 {
   justify-content: flex-end;
   gap: 10px; }
 
+/*PAGINA preguntas frecuentes*/
 .fondo h4 {
   text-align: center;
   margin-bottom: 10px; }

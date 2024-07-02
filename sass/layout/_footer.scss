@@ -3,21 +3,16 @@ footer {
     background-color: rgb(156, 156, 156);
 }
 .footer-flex {
-    display: flex;
     width: 100%;
     height: 150px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-flow(row, wrap, space-between, center, none);
 }
 .item1-ubi-mail {
     margin-left: 40px;
 }
 .item2-sobre-pregfr {
-    display: flex;
     height: 140px;
-    flex-direction: column;
-    justify-content: space-around;
+    @include flex-flow(column, wrap, center, none, 20px);
 }
 .item3-redes-sociales {
     margin-right: 40px;
