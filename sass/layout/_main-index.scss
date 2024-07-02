@@ -1,0 +1,291 @@
+/**MAIN**/
+
+main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+h2 {
+    font-family: Rubik;
+    color: rgb(123, 29, 29);
+}
+h3 {
+    font-family: Rubik;
+}
+h4 {
+    font-family: Roboto;
+    color: rgb(8, 8, 100);
+}
+h6 {
+    font-family: Roboto;
+}
+
+/*Sección Banner*/
+.grid-banner {
+    display: grid;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: repeat(4, 25%);
+    text-align: center;
+    img {
+        width: 100%;
+        height: 700px;
+        grid-column: 1/4;
+        grid-row: 1/4;
+    }
+    p {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        text-transform: uppercase;
+        color: white;
+        font-size: 47px;
+    }
+    a {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        font-size: 25px;
+        color: white;
+        margin-top: 50px;
+    }
+}
+
+/*Dimensiones generales de todos los carteles y productos del index*/
+.productPic {
+    img {
+        width: 175px;
+        height: 175px;
+    }
+    h4 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    p {
+        font-size: 20px;
+    }
+    p2 {
+        font-size: 30px;
+    }
+    a {
+        font-size: 23px;
+    }
+}
+.cartelPic {
+    width: 25%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 85% 15%;
+    img {
+        width: 100%;
+        height: 100%;
+        grid-column: 1/4;
+        grid-row: 1/3;
+    }
+    h2 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+}
+.flex-productos {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 5px 10px 5px;
+}
+.productPic {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*SECCION -- ENVIOS NEWSLETTER ETC */
+.bloque-central-grids {
+    display: grid;
+    width: 100%;
+    height: 400px;
+    grid-template-columns: 74% 24%;
+    grid-template-rows: 40% 60%;
+    grid-template-areas: "item1 item3" "item2 item3";
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.bloque-envios {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+}
+.envios {
+    width: 250px;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(209, 209, 209);
+    img {
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+        color: white;
+    }
+    p {
+        color: black;
+        margin: 10px;
+    }
+}
+.bloque-nuevos-ingresos {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: (3, 1fr);
+    grid-template-rows: (3, 1fr);
+    width: 100%;
+    height: 100%;
+    grid-area: item2;
+    img {
+        width: 100%;
+        height: 100%;
+        grid-column: 1/4;
+        grid-row: 1/4;
+    }
+    h2 {
+        width: 100%;
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+}
+.bloque-newsletter {
+    grid-area: item3;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: rgb(209, 209, 209);
+    p {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    form {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.button {
+    padding: 5px 10px;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    input {
+        background-color: black;
+        color: white;
+    }
+    &:active {
+        background-color: green;
+    }
+    input:active {
+        background-color: black;
+        color: white;
+        font-size: larger;
+    }
+}
+.bloque-newsletter input::placeholder {
+    background-color: gray;
+    color: white;
+}
+
+/*SECCION -- PRODUCTOS RECOMENDADOS*/
+.recomendados {
+    width: 100%;
+    height: 100%;
+    background-color: beige;
+    margin: 10px;
+    h3 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    p {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+.recomendados-grid {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 90% 10%;
+    grid-template-areas: "item1 item3 item5 item7 item9 item11" "item2 item4 item6 item8 item10 item12";
+    img {
+        width: 170px;
+        height: 170px;
+    }
+}
+.r1 {
+    grid-area: item1;
+    justify-self: center;
+}
+.r2 {
+    grid-area: item2;
+    justify-self: center;
+}
+.r3 {
+    grid-area: item3;
+    justify-self: center;
+}
+.r4 {
+    grid-area: item4;
+    justify-self: center;
+}
+.r5 {
+    grid-area: item5;
+    justify-self: center;
+}
+.r6 {
+    grid-area: item6;
+    justify-self: center;
+}
+.r7 {
+    grid-area: item7;
+    justify-self: center;
+}
+.r8 {
+    grid-area: item8;
+    justify-self: center;
+}
+.r9 {
+    grid-area: item9;
+    justify-self: center;
+}
+.r10 {
+    grid-area: item10;
+    justify-self: center;
+}
+.r11 {
+    grid-area: item11;
+    justify-self: center;
+}
+.r12 {
+    grid-area: item12;
+    justify-self: center;
+}
