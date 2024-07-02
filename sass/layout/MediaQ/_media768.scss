@@ -1,0 +1,170 @@
+@media (max-width: 768px) {
+    header {
+        position: inherit;
+
+        .login a {
+            display: none;
+        }
+
+        grid-template-rows: 65% 17.5% 17.5%;
+    }
+
+    .item4-search {
+        grid-row: 3/4;
+        align-self: flex-end;
+    }
+
+    .item2-nav {
+        grid-column: 1/4;
+        justify-self: center;
+
+        ul li {
+            margin: 6px;
+        }
+    }
+
+    .grid-banner {
+        img {
+            height: 350px;
+        }
+
+        p {
+            font-size: 30px;
+        }
+
+        a {
+            font-size: 15px;
+        }
+    }
+
+    .item3-prod {
+        display: none;
+    }
+
+    .cartelPic {
+        width: 270px;
+        height: 300px;
+    }
+
+    .item1-prod,
+    .item2-prod {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .productPic {
+        h4 {
+            font-size: 22px;
+            margin-bottom: 25px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        p2 {
+            font-size: 20px;
+        }
+
+        a {
+            font-size: 15px;
+        }
+    }
+
+    .bloque-central-grids {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        grid-template-columns: 20% 45% 30%;
+        grid-template-rows: 1fr;
+        grid-template-areas: "item1 item2 item3";
+    }
+
+    .bloque-envios {
+        flex-direction: column;
+    }
+
+    .envios {
+        img {
+            width: 35px;
+            height: 35px;
+        }
+
+        p {
+            font-size: 10px;
+        }
+    }
+
+    .bloque-newsletter {
+        h3 {
+            font-size: 17px;
+        }
+
+        p {
+            font-size: 10px;
+        }
+
+        form input {
+            width: 110px;
+        }
+    }
+
+    .recomendados-grid img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .footer-flex {
+        height: 250px;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .item1-ubi-mail {
+        order: 2;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .item2 {
+        order: 3;
+    }
+
+    .item3-redes-sociales {
+        order: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-left: 40px;
+    }
+
+    /* PAGINA Carrito */
+
+    .grid-carrito {
+        height: 800px;
+    }
+
+    .resumen3 {
+        grid-row: 3/5;
+    }
+
+    .resumen1,
+    .resumen2 {
+        flex-direction: column;
+    }
+
+    .resumen1-text,
+    .resumen2-text {
+        align-items: center;
+    }
+
+    .grid-carrito {
+        grid-template-columns: 60% 40%;
+    }
+}
