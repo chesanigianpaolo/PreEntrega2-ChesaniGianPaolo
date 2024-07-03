@@ -365,6 +365,7 @@ h6 {
 
 /**Fondo blanco todas paginas secundarias**/
 .fondo {
+  width: 100%;
   height: auto;
   background-color: white;
   margin: 10px; }
@@ -536,6 +537,7 @@ h6 {
     justify-content: center; }
 
 @media (max-width: 1024px) {
+  /*index*/
   .grid-banner img {
     height: 520px; }
   .grid-banner p {
@@ -593,6 +595,7 @@ h6 {
     font-size: 30px; }
   .grid-banner a {
     font-size: 15px; }
+  /*index*/
   .item3-prod {
     display: none; }
   .cartelPic {

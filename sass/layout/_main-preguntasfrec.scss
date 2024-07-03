@@ -13,7 +13,6 @@
     justify-content: center;
     align-items: center;
     background-color: beige;
-
     img {
         width: 70px;
         height: 70px;
@@ -29,7 +28,6 @@
     grid-template-areas: "item1 item2 item3 item4" "item5 item6 item7 item8";
     justify-content: center;
     margin-bottom: 40px;
-
     .item1 {
         grid-area: item1;
     }
@@ -66,7 +64,6 @@
 .flex-preg-frec {
     display: flex;
     flex-direction: column;
-
     li {
         height: 35px;
         margin: 5px;

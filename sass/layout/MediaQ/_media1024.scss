@@ -1,45 +1,37 @@
 @media (max-width: 1024px) {
+    /*index*/
     .grid-banner {
         img {
             height: 520px;
         }
-
         p {
             font-size: 37px;
         }
-
         a {
             font-size: 20px;
         }
     }
-
     .item4-prod {
         display: none;
     }
-
     .cartelPic {
         height: 400px;
     }
-
     .productPic img {
         width: 150px;
         height: 150px;
     }
-
     .envios {
         width: auto;
     }
-
     .recomendados-grid {
         height: auto;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 44% 6% 44% 6%;
         grid-template-areas: "item1 item3 item5" "item2 item4 item6" "item7 item9 item11" "item8 item10 item12";
-
         a {
             margin-bottom: 5%;
         }
-
         img {
             width: 220px;
             height: 220px;
@@ -47,21 +39,17 @@
     }
 
     /* PAGINA Carrito */
-
     .resumen1-img img {
         width: 200px;
         height: 200px;
     }
-
     .resumen1-text {
         gap: 5px;
     }
-
     .resumen2-img img {
         width: 200px;
         height: 200px;
     }
-
     .resumen2-text {
         gap: 5px;
     }

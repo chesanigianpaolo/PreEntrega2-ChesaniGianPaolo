@@ -5,32 +5,26 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "item1 item2 item3 item4" "item5 item6 item7 item8" "item9 item10 item11 item12";
-
     div {
         background-color: map-get($colores-cards, color4);
         @include flex-flow(column,wrap,none,center,none);
         margin: 10px;
         margin-bottom: 100px;
     }
-
     img {
         width: 300px;
         height: 300px;
         margin: 20px;
     }
-
     h4 {
         font-size: 27px;
     }
-
     p {
         font-size: 20px;
     }
-
     p2 {
         font-size: 30px;
     }
-
     button {
         width: 60px;
         height: 30px;
