@@ -524,18 +524,33 @@ h6 {
   .grid-preg-frec .item8 {
     grid-area: item8; }
 
+/* reemplazado por BS, ver partial sass
 .flex-preg-frec {
-  display: flex;
-  flex-direction: column; }
-  .flex-preg-frec li {
-    height: 35px;
-    margin: 5px;
-    background-color: beige;
-    border: 1px solid #4a3333;
     display: flex;
     flex-direction: column;
-    justify-content: center; }
+    li {
+        height: 35px;
+        margin: 5px;
+        background-color: beige;
+        border: 1px solid rgb(74, 51, 51);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+*/
+/*pagina preguntas frecuentes*/
+.contenedorcontenedorespregfrec {
+  width: 100vw; }
 
+.contenedoresitemspregfrec {
+  width: 100vw;
+  background-color: beige;
+  margin-bottom: 15px;
+  text-align: start;
+  padding: 10px; }
+
+/*pagina billeteras*/
 @media (max-width: 1024px) {
   /*index*/
   .grid-banner img {
