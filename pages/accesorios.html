@@ -10,133 +10,198 @@
     <meta name="robots" content="no-index, follow">
     <title>Accesorios - Comprá en 6 cuotas sin interés - Serene</title>
     <link rel="shortcut icon" href="../assets/S-ico.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap JS (jQuery required) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-Z3oxpYHjAzUcJjSFvkGYDWcHs70Z/nF4JCw9IRBvux9Z5SQ83YZtJyp1ZmL1oTl6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+ewz6aYEJ5kI6+kzVJkzQ5m1zI6RTkmJKzU" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div class="item1-logoserene">
-            <a href="../index.html"><img src="../assets/Serene_index.png" alt=""></a>
-        </div>
-        <div class="item2-nav">
-            <nav>
-                <ul>
-                    <li><a href="bags.html">Bags</a></li>
-                    <li><a href="minibags.html">MiniBags</a></li>
-                    <li><a href="billeteras.html">Billeteras</a></li>
-                    <li><a href="#">Accesorios</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="item3-login">
-            <div class="login">
-                <a href="">login | sign up</a>
-                <a1 href=""><img src="../assets/login.png" alt=""></a>
+    <header class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-5 order-md-2">
+                <a href="../index.html"><img src="../assets/Serene_index.png" alt=""></a>
             </div>
-        </div>
-        <div class="item4-search">
-            <div class="carrito-search">
-                <a href=""><img src="../assets/lupa.png" alt=""></a>
-                <a href=""><img src="../assets/heart.png" alt=""></a>
-                <a href="carrito.html"><img src="../assets/carrito-de-compras.png" alt=""></a>
+            <div class="col-md-5 order-md-1">
+                <nav class="navbar navbar-expand-md navbar-light bg-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="bags.html">Bags</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="minibags.html">MiniBags</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="billeteras.html">Billeteras</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="accesorios.html">Accesorios</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-md-2 order-md-3">
+                <div class="login">
+                    <a href="">sign up</a>
+                    <a href="">| login <img src="../assets/login.png" alt=""></a>
+                </div>
+                <div class="carrito-search">
+                    <a href=""><img src="../assets/lupa.png" alt=""></a>
+                    <a href=""><img src="../assets/heart.png" alt=""></a>
+                    <a href="carrito.html"><img src="../assets/carrito-de-compras.png" alt=""></a>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
-        <div class="fondo">
-            <div class="grid-carteras-accesorios">
-                <div>
-                    <img src="../assets/ring.png" alt="">
-                    <h4>RING</h4>
-                    <p>-$32.000-</p>
-                    <p2>$28.000</p>
-                    <button>-   1   +</button>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card text-center">
+                        <img src="../assets/pag-productos/4-accesorios/1accesorioscards.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Billetera BTC</h5>
+                            <p class="card-text">Texto de ejemplo para la card. Puedes agregar aquí la información que desees
+                                mostrar.</p>
+                            <a href="#" class="btn btn-primary">Botón</a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="../assets/belt.png" alt="">
-                    <h4>BELT</h4>
-                    <p>-$32.000-</p>
-                    <p2>$28.000</p>
-                    <button>-   1   +</button>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card text-center">
+                        <img src="../assets/pag-productos/4-accesorios/2accesorioscards.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Billetera BTC</h5>
+                            <p class="card-text">Texto de ejemplo para la card. Puedes agregar aquí la información que desees
+                                mostrar.</p>
+                            <a href="#" class="btn btn-primary">Botón</a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="../assets/ring.png" alt="">
-                    <h4>RING</h4>
-                    <p>-$32.000-</p>
-                    <p2>$28.000</p>
-                    <button>-   1   +</button>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card text-center">
+                        <img src="../assets/pag-productos/4-accesorios/3accesorioscards.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Billetera BTC</h5>
+                            <p class="card-text">Texto de ejemplo para la card. Puedes agregar aquí la información que desees
+                                mostrar.</p>
+                            <a href="#" class="btn btn-primary">Botón</a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="../assets/belt.png" alt="">
-                    <h4>BELT</h4>
-                    <p>-$32.000-</p>
-                    <p2>$28.000</p>
-                    <button>-   1   +</button>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card text-center">
+                        <img src="../assets/pag-productos/4-accesorios/4accesorioscards.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Billetera BTC</h5>
+                            <p class="card-text">Texto de ejemplo para la card. Puedes agregar aquí la información que desees
+                                mostrar.</p>
+                            <a href="#" class="btn btn-primary">Botón</a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="../assets/ring.png" alt="">
-                    <h4>RING</h4>
-                    <p>-$32.000-</p>
-                    <p2>$28.000</p>
-                    <button>-   1   +</button>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card text-center">
+                        <img src="../assets/pag-productos/4-accesorios/5accesorioscards.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Billetera BTC</h5>
+                            <p class="card-text">Texto de ejemplo para la card. Puedes agregar aquí la información que desees
+                                mostrar.</p>
+                            <a href="#" class="btn btn-primary">Botón</a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="../assets/belt.png" alt="">
-                    <h4>BELT</h4>
-                    <p>-$32.000-</p>
-                    <p2>$28.000</p>
-                    <button>-   1   +</button>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card text-center">
+                        <img src="../assets/pag-productos/4-accesorios/6accesorioscards.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Billetera BTC</h5>
+                            <p class="card-text">Texto de ejemplo para la card. Puedes agregar aquí la información que desees
+                                mostrar.</p>
+                            <a href="#" class="btn btn-primary">Botón</a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="../assets/ring.png" alt="">
-                    <h4>RING</h4>
-                    <p>-$32.000-</p>
-                    <p2>$28.000</p>
-                    <button>-   1   +</button>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card text-center">
+                        <img src="../assets/pag-productos/4-accesorios/7accesorioscards.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Billetera BTC</h5>
+                            <p class="card-text">Texto de ejemplo para la card. Puedes agregar aquí la información que desees
+                                mostrar.</p>
+                            <a href="#" class="btn btn-primary">Botón</a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="../assets/belt.png" alt="">
-                    <h4>BELT</h4>
-                    <p>-$32.000-</p>
-                    <p2>$28.000</p>
-                    <button>-   1   +</button>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card text-center">
+                        <img src="../assets/pag-productos/4-accesorios/8accesorioscards.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Billetera BTC</h5>
+                            <p class="card-text">Texto de ejemplo para la card. Puedes agregar aquí la información que desees
+                                mostrar.</p>
+                            <a href="#" class="btn btn-primary">Botón</a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="../assets/ring.png" alt="">
-                    <h4>RING</h4>
-                    <p>-$32.000-</p>
-                    <p2>$28.000</p>
-                    <button>-   1   +</button>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card text-center">
+                        <img src="../assets/pag-productos/4-accesorios/9accesorioscards.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Billetera BTC</h5>
+                            <p class="card-text">Texto de ejemplo para la card. Puedes agregar aquí la información que desees
+                                mostrar.</p>
+                            <a href="#" class="btn btn-primary">Botón</a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="../assets/belt.png" alt="">
-                    <h4>BELT</h4>
-                    <p>-$32.000-</p>
-                    <p2>$28.000</p>
-                    <button>-   1   +</button>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card text-center">
+                        <img src="../assets/pag-productos/4-accesorios/10accesorioscards.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Billetera BTC</h5>
+                            <p class="card-text">Texto de ejemplo para la card. Puedes agregar aquí la información que desees
+                                mostrar.</p>
+                            <a href="#" class="btn btn-primary">Botón</a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="../assets/ring.png" alt="">
-                    <h4>RING</h4>
-                    <p>-$32.000-</p>
-                    <p2>$28.000</p>
-                    <button>-   1   +</button>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card text-center">
+                        <img src="../assets/pag-productos/4-accesorios/11accesorioscards.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Billetera BTC</h5>
+                            <p class="card-text">Texto de ejemplo para la card. Puedes agregar aquí la información que desees
+                                mostrar.</p>
+                            <a href="#" class="btn btn-primary">Botón</a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="../assets/belt.png" alt="">
-                    <h4>BELT</h4>
-                    <p>-$32.000-</p>
-                    <p2>$28.000</p>
-                    <button>-   1   +</button>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card text-center">
+                        <img src="../assets/pag-productos/4-accesorios/12accesorioscards.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Billetera BTC</h5>
+                            <p class="card-text">Texto de ejemplo para la card. Puedes agregar aquí la información que desees
+                                mostrar.</p>
+                            <a href="#" class="btn btn-primary">Botón</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
 
-
-
-        
     </main>
+    
     <footer class="footer-flex">
         <div class="item1-ubi-mail">
             <img src="../assets/ubi.png" alt="item ubicacion - esquina Chacabuco y Olmos - Córdoba, Argentina">

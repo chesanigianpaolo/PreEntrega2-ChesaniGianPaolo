@@ -4,6 +4,7 @@
 @import "./utilities/extends";
 
 @import "./base/reset";
+@import "./base/tipografías";
 
 @import "./layout/header";
 @import "./layout/footer";
@@ -15,6 +16,7 @@
 
 @import "./components/cards";
 @import "./components/bootstrap";
+@import "./components/navbar";
 
 
 @import "./layout/MediaQ/media1024";
