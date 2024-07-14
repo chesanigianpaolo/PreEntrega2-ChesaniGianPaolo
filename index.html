@@ -16,36 +16,51 @@
     <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fmodarelativa.com%2Fproductos%2Fcartera-mini-bag-importada-roma%2F&psig=AOvVaw0RlzUQB2KmocFl2OYHm_1h&ust=1720039435173000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwi7uMStnImHAxWPq5UCHZzMARIQjRx6BAgAEBU">
     <title>Serene - El verdadero estilo a tu alcance</title>
     <link rel="shortcut icon" href="./assets/S-ico.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
     <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');</style>
 </head>
 <body>
     <!-- Los 5 HTML son: index, bags, accesorios, carrito, preguntas frecuentes -->
-    <header>
-        <div class="item1-logoserene">
-            <a href="index.html"><img src="./assets/Serene_index.png" alt="Logo de Serene. Representando con un diseño apropiado la personalidad de nuestra marca."></a>
-        </div>
-        <div class="item2-nav">
-            <nav>
-                <ul>
-                    <li><a href="./pages/bags.html">Bags</a></li>
-                    <li><a href="./pages/minibags.html">MiniBags</a></li>
-                    <li><a href="./pages/billeteras.html">Billeteras</a></li>
-                    <li><a href="./pages/accesorios.html">Accesorios</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="item3-login">
-            <div class="login">
-                <a href="">sign up</a>
-                <a href="">| login<img src="./assets/login.png" alt="item sign up | login"></a>
+    <header class="container-fluid" class="header-BS">
+        <div class="row align-items-center">
+            <div class="col-md-5 order-md-2">
+                <a href="./index.html"><img src="./assets/Serene_index.png" alt=""></a>
             </div>
-        </div>
-        <div class="item4-search">
-            <div class="carrito-search">
-                <a href=""><img src="./assets/lupa.png" alt="item buscador"></a>
-                <a href=""><img src="./assets/heart.png" alt="item elementos gustados"></a>
-                <a href="./pages/carrito.html"><img src="./assets/carrito-de-compras.png" alt="item carrito de compras"></a>
+            <div class="col-md-5 order-md-1">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/bags.html">Bags</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/minibags.html">MiniBags</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/billeteras.html">Billeteras</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/accesorios.html">Accesorios</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-md-2 order-md-3 block3header">
+                <div class="login">
+                    <a href="">sign up</a>
+                    <a href="">| login<img src="./assets/login.png" alt="item sign up | login"></a>
+                </div>
+                <div class="carrito-search">
+                    <a href=""><img src="./assets/lupa.png" alt="item buscador"></a>
+                    <a href=""><img src="./assets/heart.png" alt="item elementos gustados"></a>
+                    <a href="./pages/carrito.html"><img src="./assets/carrito-de-compras.png" alt="item carrito de compras"></a>
+                </div>
             </div>
         </div>
     </header>
@@ -300,5 +315,13 @@
         </div>
     </footer>
     <aside></aside>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
 </body>
 </html>
