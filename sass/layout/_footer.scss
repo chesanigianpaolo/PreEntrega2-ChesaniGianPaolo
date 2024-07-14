@@ -4,11 +4,15 @@ footer {
 }
 .footer-flex {
     width: 100%;
-    height: 150px;
+    height: 200px;
     @include flex-flow(row, wrap, space-between, center, none);
 }
 .item1-ubi-mail {
     margin-left: 40px;
+    margin-top: 10px;
+}
+.item1-ubi-mail p {
+    font-size: 15px;
 }
 .item2-sobre-pregfr {
     height: 140px;
@@ -17,10 +21,11 @@ footer {
 .item3-redes-sociales {
     margin-right: 40px;
 }
-.barra {
-    border-right: 1px solid black;
+.item3-redes-sociales img{
+    width: 30px;
 }
 .term-polit,
 .sobre-preg {
+    margin-top: 45px;
     text-align: center;
 }

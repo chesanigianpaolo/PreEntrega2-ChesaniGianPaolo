@@ -1,22 +1,13 @@
 @media (max-width: 768px) {
-    header {
-        position: inherit;
-        .login a {
-            display: none;
-        }
-        grid-template-rows: 65% 17.5% 17.5%;
+    /*HEADERS*/
+    .login{
+        margin-bottom: 10px;
+        margin-top: 5px;
+        font-size: 13px;
     }
-    .item4-search {
-        grid-row: 3/4;
-        align-self: flex-end;
-    }
-    .item2-nav {
-        grid-column: 1/4;
-        justify-self: center;
-        ul li {
-            margin: 6px;
-        }
-    }
+
+
+    /*index*/
     .grid-banner {
         img {
             height: 350px;
@@ -28,21 +19,23 @@
             font-size: 15px;
         }
     }
-
-    /*index*/
+    
+    .flex-productos{
+        height: 350px;
+    }
     .item3-prod {
         display: none;
     }
     .cartelPic {
-        width: 270px;
-        height: 300px;
+        width: 300px;
+        height: 330px;
     }
     .item1-prod,
     .item2-prod {
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
     }
     .productPic {
@@ -60,9 +53,11 @@
             font-size: 15px;
         }
     }
+
+    /*bloque central index*/
     .bloque-central-grids {
         width: 100%;
-        height: auto;
+        height: 330px;
         justify-content: center;
         grid-template-columns: 20% 45% 30%;
         grid-template-rows: 1fr;
@@ -91,14 +86,21 @@
             width: 110px;
         }
     }
+    .bloque-nuevos-ingresos h2{
+        font-size: 23px;
+    }
+
+    /*productos recomendados index*/
     .recomendados-grid img {
         width: 130px;
         height: 130px;
     }
+
+    /*footer*/
     .footer-flex {
-        height: 250px;
+        height: 300px;
         flex-direction: column;
-        gap: 30px;
+        gap: 15px;
         justify-content: center;
     }
     .item1-ubi-mail {
@@ -106,6 +108,11 @@
         display: flex;
         justify-content: center;
         gap: 15px;
+        margin-right: 30px;
+    }
+    .item1-ubi-mail img{
+        width: 25px;
+        height: 25px;
     }
     .item2 {
         order: 3;
@@ -115,27 +122,68 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        gap: 15px;
         margin-left: 40px;
     }
+    .sobre-preg{
+        margin-top: 15px;
+    }
+    .term-polit{
+        margin-top: 25px;
+    }
+
 
 
     /* PAGINA Carrito */
     .grid-carrito {
-        height: 800px;
-    }
-    .resumen3 {
-        grid-row: 3/5;
-    }
-    .resumen1,
-    .resumen2 {
+        width: 80%;
+        height: auto;
+        display: flex;
         flex-direction: column;
-    }
-    .resumen1-text,
-    .resumen2-text {
         align-items: center;
+        justify-content: center;
+        gap: 10px;
+        .resumen1, .resumen2{
+            display: flex;
+            flex-direction: column;
+        }
     }
-    .grid-carrito {
-        grid-template-columns: 60% 40%;
+    .resumen1-img img {
+        width: 210px;
+        height: 210px;
+        margin-top: 10px;
+    }
+    .resumen2-img img {
+        width: 210px;
+        height: 210px;
+        margin-top: 10px;
+    }
+    .resumen3{
+        h4{
+            margin-top: 10px;
+        }
+        a{
+            margin-bottom: 10px;
+        }
+    }
+    .resumen1-text, .resumen2-text{
+        align-items: center;
+        a{
+            margin-bottom: 15px;
+        }
+    }
+
+
+    /*PAGINA PREGUNTAS FRECUENTES*/
+    .grid-preg-frec{
+        height: 1000px;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(4, 25%);
+        grid-template-areas:
+        "item1 item2"
+        "item3 item4"
+        "item5 item6"
+        "item7 item8";
+        margin-left: 30px;
     }
 }

@@ -5,72 +5,38 @@
   padding: 0;
   box-sizing: border-box; }
 
-/*HEADER -- ver bootstrap
-header {
-    width: 100wv;
-    height: auto;
-    background-color: rgb(255, 255, 255);
-    position: sticky;
-    top: 0;
-    display: grid;
-    grid-template-columns: 35% 30% 35%;
-    grid-template-rows: 80% 20%;
-    div nav ul {
-        list-style: none;
-    }
-}
-nav ul li {
-    display: inline-block;
-    margin: 10px;
-}
-header div nav ul li a {
-    text-decoration: none;
-    font-size: 23px;
-    &:hover {
-        color: rgb(71, 70, 70);
-        text-decoration: underline;
-        font-weight: bold;
-    }
-}
-.login a {
-    text-decoration: none;
-}
-.item1-logoserene {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    justify-self: center;
-}
-.item2-nav {
-    grid-column: 1/3;
-    grid-row: 2/3;
-    margin-left: 30px;
-    align-self: self-end;
-}
-.item3-login {
-    grid-column: 3/4;
-    grid-row: 1/2;
-    justify-self: end;
-    margin-top: 10px;
-    margin-right: 10%;
-    &:hover {
-        text-decoration: underline;
-        font-size: 18px;
-    }
-}
-.item4-search {
-    grid-column: 3/4;
-    grid-row: 2/3;
-    justify-self: end;
-    margin-right: 10%;
-}
+/*headers, edicion del bs */
+.header-BS {
+  width: 100%;
+  height: auto;
+  top: 0; }
 
-*/
+.nav-item {
+  margin: 8px; }
+
+.nav-item a {
+  font-size: 20px; }
+  .nav-item a:hover {
+    color: #474646;
+    text-decoration: underline;
+    font-weight: bold; }
+
+.block3header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+
+.login {
+  margin-bottom: 80px;
+  margin-top: 5px;
+  font-size: 13px; }
+
 footer {
   background-color: #9c9c9c; }
 
 .footer-flex {
   width: 100%;
-  height: 150px;
+  height: 200px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -79,7 +45,11 @@ footer {
   gap: none; }
 
 .item1-ubi-mail {
-  margin-left: 40px; }
+  margin-left: 40px;
+  margin-top: 10px; }
+
+.item1-ubi-mail p {
+  font-size: 15px; }
 
 .item2-sobre-pregfr {
   height: 140px;
@@ -93,11 +63,12 @@ footer {
 .item3-redes-sociales {
   margin-right: 40px; }
 
-.barra {
-  border-right: 1px solid black; }
+.item3-redes-sociales img {
+  width: 30px; }
 
 .term-polit,
 .sobre-preg {
+  margin-top: 45px;
   text-align: center; }
 
 /*MAIN-index*/
@@ -108,7 +79,7 @@ main {
 
 h2 {
   font-family: Rubik;
-  color: #7b1d1d; }
+  color: black; }
 
 h3 {
   font-family: Rubik; }
@@ -184,7 +155,7 @@ h6 {
 .flex-productos {
   display: flex;
   width: 100%;
-  height: auto;
+  height: 420px;
   flex-direction: row;
   justify-content: space-between;
   margin: 10px 5px 10px 5px; }
@@ -203,7 +174,7 @@ h6 {
 .bloque-central-grids {
   display: grid;
   width: 100%;
-  height: 500px;
+  height: auto;
   grid-template-columns: 74% 24%;
   grid-template-rows: 40% 60%;
   grid-template-areas: "item1 item3" "item2 item3";
@@ -212,7 +183,7 @@ h6 {
 
 .bloque-envios {
   width: 100%;
-  height: auto;
+  height: 150px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -259,7 +230,7 @@ h6 {
 .bloque-newsletter {
   grid-area: item3;
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -423,7 +394,7 @@ h6 {
 
 .grid-carrito {
   width: 90%;
-  height: 650px;
+  height: 680px;
   display: grid;
   grid-template-columns: 65% 35%;
   grid-template-rows: repeat(4, 1fr);
@@ -482,25 +453,12 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 10px; }
+  gap: 5px; }
 
 /*PAGINA preguntas frecuentes*/
 .fondo h4 {
   text-align: center;
   margin-bottom: 10px; }
-
-.preguntas {
-  width: 80%;
-  height: 240px;
-  padding: 15px 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: beige; }
-  .preguntas img {
-    width: 70px;
-    height: 70px; }
 
 .grid-preg-frec {
   width: 100%;
@@ -528,22 +486,20 @@ h6 {
   .grid-preg-frec .item8 {
     grid-area: item8; }
 
-/* reemplazado por BS, ver partial sass
-.flex-preg-frec {
-    display: flex;
-    flex-direction: column;
-    li {
-        height: 35px;
-        margin: 5px;
-        background-color: beige;
-        border: 1px solid rgb(74, 51, 51);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
-*/
-/*pagina preguntas frecuentes*/
+.preguntas {
+  width: 80%;
+  height: 240px;
+  padding: 15px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: beige; }
+  .preguntas img {
+    width: 70px;
+    height: 70px; }
+
+/*BS pagina preguntas frecuentes*/
 .contenedorcontenedorespregfrec {
   width: 100vw; }
 
@@ -554,39 +510,54 @@ h6 {
   text-align: start;
   padding: 10px; }
 
-/*header bags minibags billeteras accesorios */
-.header-BS {
-  width: 100%;
-  height: auto;
-  background-color: white;
-  position: sticky;
-  top: 0;
-  display: grid;
-  grid-template-columns: 35% 30% 35%;
-  grid-template-rows: 80% 20%; }
-  .header-BS div nav ul {
-    list-style: none; }
+/* Animaciones para las cards */
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; }
 
-.nav-item {
-  margin: 3px; }
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); }
 
-.nav-item a {
-  font-size: 20px; }
-  .nav-item a:hover {
-    color: #474646;
-    text-decoration: underline;
-    font-weight: bold; }
+.card-img-top {
+  height: 200px;
+  /* Ajusta la altura según tu diseño */
+  object-fit: cover;
+  transition: transform 0.3s ease; }
 
-.block3header {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end; }
+.card:hover .card-img-top {
+  transform: scale(1.1); }
 
-.login, .carrito-search {
-  margin-bottom: 50px; }
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem; }
 
-.login {
-  font-size: 13px; }
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 0.5rem; }
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #343a40;
+  /* Color de fondo del botón */
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; }
+
+.btn:hover {
+  background-color: #212529; }
+
+.btn:hover, .btn:focus {
+  text-decoration: none; }
 
 /* no anduvo 
 .navbar-nav .nav-link{
@@ -603,6 +574,13 @@ h6 {
 } 
 */
 @media (max-width: 1024px) {
+  /*Headers*/
+  .nav-item {
+    margin: 1px; }
+  .nav-item a {
+    font-size: 18px; }
+  .login img {
+    width: 20px; }
   /*index*/
   .grid-banner img {
     height: 520px; }
@@ -617,8 +595,16 @@ h6 {
   .productPic img {
     width: 150px;
     height: 150px; }
+  /*bloque central index*/
+  .bloque-envios {
+    width: 100%; }
   .envios {
     width: auto; }
+  .bloque-newsletter form input {
+    width: 150px; }
+  .bloque-nuevos-ingresos h2 {
+    font-size: 25px; }
+  /*productos recomendados index*/
   .recomendados-grid {
     height: auto;
     grid-template-columns: repeat(3, 1fr);
@@ -627,52 +613,57 @@ h6 {
     .recomendados-grid a {
       margin-bottom: 5%; }
     .recomendados-grid img {
-      width: 220px;
-      height: 220px; }
+      width: 240px;
+      height: 240px; }
   /* PAGINA Carrito */
   .resumen1-img img {
-    width: 200px;
-    height: 200px; }
-  .resumen1-text {
-    gap: 5px; }
+    width: 240px;
+    height: 240px; }
   .resumen2-img img {
-    width: 200px;
-    height: 200px; }
+    width: 240px;
+    height: 240px; }
+  .resumen1-text {
+    font-size: 12px;
+    gap: 5px; }
+    .resumen1-text h6 {
+      font-size: 16px; }
+    .resumen1-text button {
+      width: 100px; }
   .resumen2-text {
-    gap: 5px; } }
+    font-size: 12px;
+    gap: 5px; }
+    .resumen2-text h6 {
+      font-size: 16px; }
+    .resumen2-text button {
+      width: 100px; }
+  /*PAGINA PREGUNTAS FRECUENTES*/ }
 
 @media (max-width: 768px) {
-  header {
-    position: inherit;
-    grid-template-rows: 65% 17.5% 17.5%; }
-    header .login a {
-      display: none; }
-  .item4-search {
-    grid-row: 3/4;
-    align-self: flex-end; }
-  .item2-nav {
-    grid-column: 1/4;
-    justify-self: center; }
-    .item2-nav ul li {
-      margin: 6px; }
+  /*HEADERS*/
+  .login {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-size: 13px; }
+  /*index*/
   .grid-banner img {
     height: 350px; }
   .grid-banner p {
     font-size: 30px; }
   .grid-banner a {
     font-size: 15px; }
-  /*index*/
+  .flex-productos {
+    height: 350px; }
   .item3-prod {
     display: none; }
   .cartelPic {
-    width: 270px;
-    height: 300px; }
+    width: 300px;
+    height: 330px; }
   .item1-prod,
   .item2-prod {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center; }
   .productPic h4 {
     font-size: 22px;
@@ -683,9 +674,10 @@ h6 {
     font-size: 20px; }
   .productPic a {
     font-size: 15px; }
+  /*bloque central index*/
   .bloque-central-grids {
     width: 100%;
-    height: auto;
+    height: 330px;
     justify-content: center;
     grid-template-columns: 20% 45% 30%;
     grid-template-rows: 1fr;
@@ -703,19 +695,27 @@ h6 {
     font-size: 10px; }
   .bloque-newsletter form input {
     width: 110px; }
+  .bloque-nuevos-ingresos h2 {
+    font-size: 23px; }
+  /*productos recomendados index*/
   .recomendados-grid img {
     width: 130px;
     height: 130px; }
+  /*footer*/
   .footer-flex {
-    height: 250px;
+    height: 300px;
     flex-direction: column;
-    gap: 30px;
+    gap: 15px;
     justify-content: center; }
   .item1-ubi-mail {
     order: 2;
     display: flex;
     justify-content: center;
-    gap: 15px; }
+    gap: 15px;
+    margin-right: 30px; }
+  .item1-ubi-mail img {
+    width: 25px;
+    height: 25px; }
   .item2 {
     order: 3; }
   .item3-redes-sociales {
@@ -723,41 +723,65 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     margin-left: 40px; }
+  .sobre-preg {
+    margin-top: 15px; }
+  .term-polit {
+    margin-top: 25px; }
   /* PAGINA Carrito */
   .grid-carrito {
-    height: 800px; }
-  .resumen3 {
-    grid-row: 3/5; }
-  .resumen1,
-  .resumen2 {
-    flex-direction: column; }
-  .resumen1-text,
-  .resumen2-text {
-    align-items: center; }
-  .grid-carrito {
-    grid-template-columns: 60% 40%; } }
-
-@media (max-width: 425px) {
-  .item2-nav ul {
+    width: 80%;
+    height: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; }
+    .grid-carrito .resumen1, .grid-carrito .resumen2 {
+      display: flex;
+      flex-direction: column; }
+  .resumen1-img img {
+    width: 210px;
+    height: 210px;
+    margin-top: 10px; }
+  .resumen2-img img {
+    width: 210px;
+    height: 210px;
+    margin-top: 10px; }
+  .resumen3 h4 {
+    margin-top: 10px; }
+  .resumen3 a {
+    margin-bottom: 10px; }
+  .resumen1-text, .resumen2-text {
     align-items: center; }
-  .carrito-search {
-    width: 80px; }
+    .resumen1-text a, .resumen2-text a {
+      margin-bottom: 15px; }
+  /*PAGINA PREGUNTAS FRECUENTES*/
+  .grid-preg-frec {
+    height: 1000px;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, 25%);
+    grid-template-areas: "item1 item2" "item3 item4" "item5 item6" "item7 item8";
+    margin-left: 30px; } }
+
+@media (max-width: 425px) {
+  /*banner index*/
   .grid-banner img {
     height: 250px; }
   .grid-banner p {
     font-size: 25px; }
   .grid-banner a {
     font-size: 11px; }
+  /*carteles y productos index*/
   .flex-productos {
     flex-direction: column;
-    align-items: center; }
-  .cartelPic {
-    width: 70%;
+    align-items: center;
     height: auto; }
+  .cartelPic {
+    width: 80%;
+    height: auto; }
+  /*bloque central index*/
   .bloque-central-grids {
     height: auto;
     display: flex;
@@ -766,6 +790,9 @@ h6 {
   .bloque-envios {
     flex-direction: row;
     height: 100px; }
+  .envios img {
+    width: 30px;
+    height: 30px; }
   .bloque-nuevos-ingresos {
     height: auto; }
   .bloque-newsletter {
@@ -778,27 +805,43 @@ h6 {
       font-size: 10px; }
     .bloque-newsletter form input {
       width: 150px; }
+  .bloque-nuevos-ingresos h2 {
+    font-size: 12px; }
+  /*productos recomendados index*/
   .recomendados-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 25% 8% 25% 8% 25% 8%;
     grid-template-areas: "item1 item3" "item2 item4" "item5 item7" "item6 item8" "item9 item11" "item10 item12"; }
     .recomendados-grid img {
       margin-bottom: 15px; }
+  /*footer*/
   .footer-flex {
-    height: 300px; }
+    height: 400px;
+    gap: 5px; }
   .item1-ubi-mail {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    gap: 5px; }
     .item1-ubi-mail img {
       width: 25px;
       height: 25px; }
+  .sobre-preg {
+    font-size: 20px;
+    margin-top: 5px; }
   /* PAGINA Carrito */
-  .grid-carrito {
+  /*PAGINA PREGUNTAS FRECUENTES*/
+  .grid-preg-frec {
     height: auto;
     display: flex;
+    flex-direction: column;
+    gap: 15px; }
+  .h4-titulo {
+    font-size: 24px; } }
+
+@media (max-width: 375px) {
+  /*footer*/
+  .term-polit {
+    display: flex;
     flex-direction: column; }
-  .resumen1,
-  .resumen2 {
-    height: 400px; }
-  .resumen3 {
-    height: 350px; } }
+  .sobre-preg {
+    font-size: 15px; } }

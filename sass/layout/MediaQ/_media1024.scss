@@ -1,4 +1,16 @@
 @media (max-width: 1024px) {
+    /*Headers*/
+    .nav-item{
+        margin: 1px;
+    }
+    .nav-item a{
+        font-size: 18px;
+    }
+    .login img{
+            width: 20px;
+    }
+
+
     /*index*/
     .grid-banner {
         img {
@@ -11,6 +23,7 @@
             font-size: 20px;
         }
     }
+    
     .item4-prod {
         display: none;
     }
@@ -21,9 +34,22 @@
         width: 150px;
         height: 150px;
     }
+
+    /*bloque central index*/
+    .bloque-envios{
+        width: 100%;
+    }
     .envios {
         width: auto;
     }
+    .bloque-newsletter form input{
+        width: 150px;
+    }
+    .bloque-nuevos-ingresos h2{
+        font-size: 25px;
+    }
+
+    /*productos recomendados index*/
     .recomendados-grid {
         height: auto;
         grid-template-columns: repeat(3, 1fr);
@@ -33,24 +59,43 @@
             margin-bottom: 5%;
         }
         img {
-            width: 220px;
-            height: 220px;
+            width: 240px;
+            height: 240px;
         }
     }
 
     /* PAGINA Carrito */
     .resumen1-img img {
-        width: 200px;
-        height: 200px;
-    }
-    .resumen1-text {
-        gap: 5px;
+        width: 240px;
+        height: 240px;
     }
     .resumen2-img img {
-        width: 200px;
-        height: 200px;
+        width: 240px;
+        height: 240px;
+    }
+
+    .resumen1-text {
+        font-size: 12px;
+        gap: 5px;
+        h6{
+            font-size: 16px;
+        }
+        button{
+            width: 100px;
+        }
     }
     .resumen2-text {
+        font-size: 12px;
         gap: 5px;
+        h6{
+            font-size: 16px;
+        }
+        button{
+            width: 100px;
+        }
     }
+
+
+    /*PAGINA PREGUNTAS FRECUENTES*/
+
 }
